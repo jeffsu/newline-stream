@@ -1,6 +1,10 @@
 # NewLine Stream
 Different solutions to handling and piping delimited strings
 
+```bash
+npm install newline-stream
+```
+
 Simple example of a json stream parser
 ```javascript
   var NLStream = require('newline-stream');
