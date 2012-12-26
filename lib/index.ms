@@ -13,8 +13,8 @@ export class Reader {
   function setup() {
     var buffer = "";
 
-    var input    = this.input;
-    var sep      = this.separator;
+    var input = this.input;
+    var sep   = this.separator;
 
     var pause  = this.pause;
     var behind = 0;
@@ -59,8 +59,9 @@ export class Reader {
 
   function pipe(output, cb) {
     var input = this.input;
+    cb = cb || #{ => $1 };
 
-    this.on('line', #{ 
+    this.on('line', #{
       if (!output.write(cb($1))) input.pause();
     });
 
