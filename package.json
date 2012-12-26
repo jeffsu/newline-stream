@@ -1,0 +1,28 @@
+{
+  "name": "newline-stream",
+  "version": "0.0.0",
+  "description": "Read and process a stream delimited by newlines",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffsu/newline-stream"
+  },
+  "keywords": [
+    "newline",
+    "stream"
+  ],
+  "author": "Jeff Su",
+  "license": "BSD",
+  "dependencies": {
+    "mochiscript": "~0.6.15",
+  },
+
+  "devDependencies": {
+    "nodeunit": "~0.7.4"
+  }
+}
