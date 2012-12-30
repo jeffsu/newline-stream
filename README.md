@@ -36,6 +36,8 @@ Enabling pause/drain/resume
   });
 ```
 
+The caveat on this method is that onFinish can only be called ONE time per event.  If there is more than one event listener, onFinish should be ignored by all but one.
+
 ## Instantiator
 ```javascript
   var NLStream = require('newline-stream'); 
